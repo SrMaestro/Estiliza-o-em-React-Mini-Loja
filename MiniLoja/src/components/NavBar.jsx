@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
-export default function NavBar({ ontoggleTheme }) {
+export default function NavBar() {
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <NavLink to="/" className={styles}>
+        <NavLink to="/" className={styles.logo}>
           <strong>Shopping</strong>
         </NavLink>
       </div>
@@ -16,9 +16,21 @@ export default function NavBar({ ontoggleTheme }) {
           <NavLink to="/kanban" className={({isActive }) => isActive ? `${styles.NavLink} ${styles.active}` : styles.navLink}>Kanban</NavLink>
         </div>
 
-        <button type="buton" onClick={ontoggleTheme}></button>
+        <button 
+            type="buton" 
+            
+        
+        
+        >
+            <span className={styles.themeText}>
+            
+            </span>
 
-        <div></div>
+        </button>
+
+        <div className={styles.cart}>
+          <span className={styles.cartCount}></span>
+        </div>
       </nav>
     </header>
   );
