@@ -31,7 +31,9 @@
   letter-spacing: -0.02em; /* Ajuste fino */
 }
 
-.dot { color: var(--color-accent); } /* Ponto decorativo */
+.dot {
+  color: var(--color-accent);
+} /* Ponto decorativo */
 
 .actions {
   display: inline-flex; /* Layout inline flex */
@@ -88,9 +90,14 @@
   outline-offset: 2px; /* Distância do foco */
 }
 
-.themeToggle:hover { transform: translateY(-1px); } /* Elevação no hover */
+.themeToggle:hover {
+  transform: translateY(-1px);
+} /* Elevação no hover */
 
-.themeText { font-size: 14px; font-weight: 600; } /* Texto do toggle */
+.themeText {
+  font-size: 14px;
+  font-weight: 600;
+} /* Texto do toggle */
 
 .themeThumb {
   position: absolute; /* Posiciona dentro do botão */
@@ -103,7 +110,9 @@
   transition: transform 200ms ease; /* Animação ao alternar */
 }
 
-:global([data-theme='dark']) .themeThumb { transform: translateX(26px); } /* Move no tema escuro */
+:global([data-theme="dark"]) .themeThumb {
+  transform: translateX(26px);
+} /* Move no tema escuro */
 
 .cart {
   display: inline-flex; /* Layout flex */
@@ -115,7 +124,9 @@
   padding: 6px 10px; /* Espaço interno */
 }
 
-.cartIcon { font-size: 16px; } /* Ícone do carrinho */
+.cartIcon {
+  font-size: 16px;
+} /* Ícone do carrinho */
 
 .cartCount {
   min-width: 1.5em; /* Largura mínima */
