@@ -20,7 +20,7 @@ export default function NavBar() {
               CSS Global
             </NavLink>
             <NavLink
-              to="/"
+              to="/styled-components"
               className={({ isActive }) =>
                 isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
               }

@@ -2,6 +2,7 @@
 import ProductCard from "./components/ProductCard";
 import NavBar from "./components/NavBar";
 import CssGlobalPage from "./pages/CssGlobalPage";
+import StyledComponentsPage from "./pages/styledComponentsPage";
 
 
 import "./styles/App.css";
@@ -73,7 +74,7 @@ function App() {
             } 
           />
           <Route path="/cssGlobal" element={<CssGlobalPage />} />
-          <Route path="*" element={<Navigate to="/" />} />
+         <Route path="/styled-components" element={< StyledComponentsPage />} />
         </Routes>
       </div>
     </BrowserRouter>
