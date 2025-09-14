@@ -12,24 +12,40 @@ export default function NavBar() {
         <nav className={styles.actions}>
           <div className={styles.links}>
             <NavLink
-              to="/"
+              to="/cssGlobal"
               className={({ isActive }) =>
-                isActive ? `${styles.NavLink} ${styles.active}` : styles.navLink
+                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
               }
             >
-              Catalogo
+              CSS Global
             </NavLink>
             <NavLink
-              to="/kanban"
+              to="/"
               className={({ isActive }) =>
-                isActive ? `${styles.NavLink} ${styles.active}` : styles.navLink
+                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
               }
             >
-              Kanban
+              styled-components
+            </NavLink>
+            <NavLink
+              to="/sobre"
+              className={({ isActive }) =>
+                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+              }
+            >
+              Tailwind CSS
+            </NavLink>
+            <NavLink
+              to="/contato"
+              className={({ isActive }) =>
+                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+              }
+            >
+              Contato
             </NavLink>
           </div>
 
-          <button type="buton">
+          <button type="button">
             <span className={styles.themeText}></span>
           </button>
 

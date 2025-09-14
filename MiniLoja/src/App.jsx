@@ -1,5 +1,9 @@
+
 import ProductCard from "./components/ProductCard";
 import NavBar from "./components/NavBar";
+import CssGlobalPage from "./pages/CssGlobalPage";
+
+
 import "./styles/App.css";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
@@ -55,16 +59,26 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <NavBar />
-        <main className="mainContent">
-          <div className="productsGrid">
-            {products.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        </main>
+        <Routes>
+          <Route 
+            path="/" 
+            element={
+              <main className="mainContent">
+                <div className="productsGrid">
+                  {products.map(product => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
+                </div>
+              </main>
+            } 
+          />
+          <Route path="/cssGlobal" element={<CssGlobalPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
 }
 
 export default App;
+
