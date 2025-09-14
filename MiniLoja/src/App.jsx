@@ -3,6 +3,7 @@ import ProductCard from "./components/ProductCard";
 import NavBar from "./components/NavBar";
 import CssGlobalPage from "./pages/CssGlobalPage";
 import StyledComponentsPage from "./pages/styledComponentsPage";
+import WindPage from "./pages/windPage"; 
 
 
 import "./styles/App.css";
@@ -74,7 +75,8 @@ function App() {
             } 
           />
           <Route path="/cssGlobal" element={<CssGlobalPage />} />
-         <Route path="/styled-components" element={< StyledComponentsPage />} />
+          <Route path="/styled-components" element={< StyledComponentsPage />} />
+          <Route path="/windpage" element={<WindPage />} /> {/* Corrigido aqui */}
         </Routes>
       </div>
     </BrowserRouter>

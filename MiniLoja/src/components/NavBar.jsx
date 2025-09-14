@@ -28,27 +28,18 @@ export default function NavBar() {
               styled-components
             </NavLink>
             <NavLink
-              to="/sobre"
+              to="/windpage"
               className={({ isActive }) =>
                 isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
               }
             >
               Tailwind CSS
             </NavLink>
-            <NavLink
-              to="/contato"
-              className={({ isActive }) =>
-                isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
-              }
-            >
-              Contato
-            </NavLink>
+            
           </div>
-
           <button type="button">
             <span className={styles.themeText}></span>
           </button>
-
           <div className={styles.cart}>
             <span className={styles.cartCount}></span>
           </div>
